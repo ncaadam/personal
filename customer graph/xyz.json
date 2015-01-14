@@ -1,0 +1,53 @@
+{
+    "_id" : ObjectId("53ba062802bb1f3f8927c5d2"),
+    "crm_data" : {
+        "customer_profile" : {
+            //generated via script
+            "customer_id" : "4321",
+            //pulled from twitter profiles (profile.name)
+            "name" : "Admiral Ackbar",
+            //pulled from twitter profiles (profile.location)
+            //match using ngram, if no match, pull time zone, auto generate a city in that time zone
+            //if no time zone auto generate a city
+            "location": "xyz"
+            //"address" : "123 Fake Street Chicago, IL 60606 USA",
+            //generated via script
+            "email" : "aackbar@email.com",
+            //generate same phone number for everything
+            "phone" : {
+                "number" : "3125551212",
+                "type" : "mobile"
+            },
+            //pulled from twitter profile (profile.screen_name)
+            "twitter" : "aackbar",
+            //generated via script
+            "date_of_birth" : "xyz"
+            //generated via script
+            "gender" : "M"
+        },
+        "customer_behavior" : {
+            "mobile_app" : "TRUE"
+            "gift_card_balance" : "1234.56"
+            "number_of_transactions" : "50"
+        }
+    },
+    "collected_data" : {
+        "twitter" : {
+            //pulled via a script
+            "all_user_tweets_id" : ObjectId("2198341"),
+            "testing_twitter_profile_id" : ObjectId("123125")
+        },
+        "employment" : {
+            "linkedin" : ""
+        }
+    },
+    "matched_data" : {
+        "sbi" : {
+            //matching this data point comes from the matching algorithm
+            "SBI_profile_id" : ObjectId("02138409284")
+        }
+    },
+    "derived_data" : {
+    }
+}
+
